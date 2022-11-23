@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3795e2;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3em;
+}
+
+h1 {
+    margin-bottom: .5em;
+    color: #fff;
+}
+
+h2 {
+    font-weight: lighter;
+    margin-bottom: 1em;
+    color: #fff;
+}
+
+.big-glass {
+    height: 330px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 4px solid #1b4cb8;
+    color: #1b4cb8;
+    border-radius: 0 0 40px 40px;
+    margin: 0.5em 0 2em 0;
+    overflow: hidden;
+}
+
+.text {
+    color: #fff;
+    margin: 2em 1em;
+    text-align: center;
+}
+
+.container-glasses {
+    max-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.small-glass {
+    height: 95px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 0 15px 15px;
+    border: 4px solid #1b4cb8;
+    background-color: #ffffffd8;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.small-glass p {
+    font-size: .9em;
+    text-align: center;
+    color: #1b4cb8;
+}
+
+.small-glass.full {
+    background-color: #58abf8;
+    color: #fff;
+}
+
+.remainder-liters{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3s ease;
+}
+
+#liters {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #1b4cb8;
+}
+
+.remainder-liters small {
+    text-align: center;
+    color: #1b4cb8;
+}
+
+.percentage {
+    height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: #58abf8;
+    transition: 0.3s ease;
+}
+
+@media screen and (max-height: 800px) {
+    html {
+        margin-top: 2em;
+    }
+}
+
+@media screen and (max-height: 730px) {
+    html {
+        margin-top: 4em;
+    }
+}
+
+@media screen and (max-height: 660px) {
+    html {
+        margin-top: 6em;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    html {
+        margin-top: 8em;
+    }
+}
+
+@media screen and (max-height: 530px) {
+    html {
+        margin-top: 10em;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    html {
+        margin-top: 12em;
+    }
+}
+
+@media screen and (max-height: 380px) {
+    html {
+        margin-top: 14em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+}
